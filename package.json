@@ -1,0 +1,33 @@
+{
+  "name": "rfp-answer-assistant",
+  "version": "1.0.0",
+  "description": "RFP/DDQ answer drafting assistant with retrieval, citation tracing and hallucination guards",
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "demo": "tsx src/cli.ts --mock --inject-hallucination Q07",
+    "test": "tsx --test --test-reporter=spec test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "rfp",
+    "ddq",
+    "llm",
+    "rag",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.5.0",
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  }
+}

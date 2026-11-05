@@ -1,0 +1,10 @@
+node_modules/
+output/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+~$*.xlsx
+adapters/ai-usage-guardrail.mjs
